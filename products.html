@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Agriculture Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Farm Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Products</h2>
+
+            <div class="dropdown-container"> 
+                <!-- Dropdown for Seeds -->
+                <div class="dropdown">
+                    <img src="Images/Seeds.jpg" alt="Seeds">
+                    <button class="dropdown-btn" onclick="toggleDropdown('seeds')">Seeds ⬇️</button>
+                    <div class="dropdown-content" id="seeds">
+                        <p>Rice Seeds - ₦100 per pack <button onclick="addToCart(1)">Add to Cart</button></p>
+                        <p>Tomato Seeds - ₦100 per pack <button onclick="addToCart(2)">Add to Cart</button></p>
+                        <p>Maize Seeds - ₦100 per pack <button onclick="addToCart(3)">Add to Cart</button></p>
+                        <p>Beans Seeds - ₦100 per pack <button onclick="addToCart(4)">Add to Cart</button></p>
+                        <p>Melon Seeds - ₦100 per pack <button onclick="addToCart(5)">Add to Cart</button></p>
+                        <p>Carrot Seeds - ₦100 per pack <button onclick="addToCart(6)">Add to Cart</button></p>
+                        <p>Onion Seeds - ₦100 per pack <button onclick="addToCart(7)">Add to Cart</button></p>
+                        <p>Pepper Seeds - ₦100 per pack <button onclick="addToCart(8)">Add to Cart</button></p>
+                        <p>Okra Seeds - ₦100 per pack <button onclick="addToCart(9)">Add to Cart</button></p>
+                        <p>Pumpkin Seeds - ₦100 per pack <button onclick="addToCart(10)">Add to Cart</button></p>
+                    </div>
+                </div>
+
+                <!-- Dropdown for Farm Tools -->
+                <div class="dropdown">
+                    <img src="Images/Farm tools.jpg" alt="Farm tools">
+                    <button class="dropdown-btn" onclick="toggleDropdown('tools')">Farm Tools ⬇️</button>
+                    <div class="dropdown-content" id="tools">
+                        <p>Hand Trowel - ₦2000 <button onclick="addToCart(11)">Add to Cart</button></p>
+                        <p>Watering Can - ₦2000 <button onclick="addToCart(12)">Add to Cart</button></p>
+                        <p>Plough - ₦2000 <button onclick="addToCart(13)">Add to Cart</button></p>
+                        <p>Shovel - ₦2000 <button onclick="addToCart(14)">Add to Cart</button></p>
+                        <p>Hoe - ₦2000 <button onclick="addToCart(15)">Add to Cart</button></p>
+                        <p>Rake - ₦2000 <button onclick="addToCart(16)">Add to Cart</button></p>
+                        <p>Spade - ₦2000 <button onclick="addToCart(17)">Add to Cart</button></p>
+                        <p>Cutlass - ₦2000 <button onclick="addToCart(18)">Add to Cart</button></p>
+                        <p>Pruning Shears - ₦2000 <button onclick="addToCart(19)">Add to Cart</button></p>
+                        <p>Pitch Fork - ₦2000 <button onclick="addToCart(20)">Add to Cart</button></p>
+                    </div>
+                </div>
+
+                <!-- Dropdown for Fertilizers -->
+                <div class="dropdown">
+                    <img src="Images/Fertilizers.jpeg" alt="Fertilizers">
+                    <button class="dropdown-btn" onclick="toggleDropdown('fertilizers')">Fertilizers ⬇️</button>
+                    <div class="dropdown-content" id="fertilizers">
+                        <p>Organic Compost - ₦500 <button onclick="addToCart(21)">Add to Cart</button></p>
+                        <p>NPK Fertilizer - ₦500 <button onclick="addToCart(22)">Add to Cart</button></p>
+                        <p>Ammonium Nitrate - ₦500 <button onclick="addToCart(23)">Add to Cart</button></p>
+                        <p>Potassium Sulphate - ₦500 <button onclick="addToCart(24)">Add to Cart</button></p>
+                        <p>Manure - ₦500 <button onclick="addToCart(25)">Add to Cart</button></p>
+                        <p>Urea - ₦500 <button onclick="addToCart(26)">Add to Cart</button></p>
+                        <p>Di-Ammonium Phosphate - ₦500 <button onclick="addToCart(27)">Add to Cart</button></p>
+                        <p>Tripple Superphosphate - ₦500 <button onclick="addToCart(28)">Add to Cart</button></p>
+                        <p>Zinc Fertilizer - ₦500 <button onclick="addToCart(29)">Add to Cart</button></p>
+                        <p>Complex Fertilizer - ₦500 <button onclick="addToCart(30)">Add to Cart</button></p>
+                    </div>
+                </div>
+
+                <!-- Dropdown for Machinery -->
+                <div class="dropdown">
+                    <img src="Images/Machineries.jpg" alt="Machineries">
+                    <button class="dropdown-btn" onclick="toggleDropdown('machineries')">Machineries ⬇️</button>
+                    <div class="dropdown-content" id="machineries">
+                        <p>Tractor - ₦100,000 <button onclick="addToCart(31)">Add to Cart</button></p>
+                        <p>Harvester - ₦100,000 <button onclick="addToCart(32)">Add to Cart</button></p>
+                        <p>Planter - ₦100,000 <button onclick="addToCart(33)">Add to Cart</button></p>
+                        <p>Tiller - ₦100,000 <button onclick="addToCart(34)">Add to Cart</button></p>
+                        <p>Mower - ₦100,000 <button onclick="addToCart(35)">Add to Cart</button></p>
+                        <p>Excavator - ₦100,000 <button onclick="addToCart(36)">Add to Cart</button></p>
+                        <p>Drill - ₦100,000 <button onclick="addToCart(37)">Add to Cart</button></p>
+                        <p>Manure Spreader - ₦100,000 <button onclick="addToCart(38)">Add to Cart</button></p>
+                        <p>Sprayer - ₦100,000 <button onclick="addToCart(39)">Add to Cart</button></p>
+                        <p>Baler - ₦100,000 <button onclick="addToCart(40)">Add to Cart</button></p>
+                    </div>
+                </div>
+
+                <!-- Dropdown for Farm Chemicals -->
+                <div class="dropdown">
+                    <img src="Images/Farm Chemicals.jpeg" alt="chemicals">
+                    <button class="dropdown-btn" onclick="toggleDropdown('chemicals')">Farm Chemicals ⬇️</button>
+                    <div class="dropdown-content" id="chemicals">
+                        <p>Insecticide - ₦600 <button onclick="addToCart(41)">Add to Cart</button></p>
+                        <p>Fungicide - ₦600 <button onclick="addToCart(42)">Add to Cart</button></p>
+                        <p>Glyphosate - ₦600 <button onclick="addToCart(43)">Add to Cart</button></p>
+                        <p>Tylenol - ₦600 <button onclick="addToCart(44)">Add to Cart</button></p>
+                        <p>Caffeine - ₦600 <button onclick="addToCart(45)">Add to Cart</button></p>
+                        <p>Rotenone - ₦600 <button onclick="addToCart(46)">Add to Cart</button></p>
+                        <p>Herbicide - ₦600 <button onclick="addToCart(47)">Add to Cart</button></p>
+                        <p>Baking Soda - ₦600 <button onclick="addToCart(48)">Add to Cart</button></p>
+                        <p>Table Salt - ₦600 <button onclick="addToCart(49)">Add to Cart</button></p>
+                        <p>Pesticide - ₦600 <button onclick="addToCart(50)">Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <br><br>
+            <!-- 🌾 Product Grid for Popular Items -->
+            <h2 style="text-align: center; color: purple; background-color: aqua;">Popular Items</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Images/Melon seeds.jpeg" alt="Melon Seeds">
+                    <h3>Melon Seeds</h3>
+                    <p>₦100 per pack</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Cutlass.jpeg" alt="Cutlass">
+                    <h3>Cutlass</h3>
+                    <p>₦2000</p>
+                    <button onclick="addToCart(2)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Fertilizer.jpeg" alt="Fertilizer">
+                    <h3>Organic Fertilizer</h3>
+                    <p>₦500</p>
+                    <button onclick="addToCart(3)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dropdown.js"></script>
+    <script src="cart.js"></script> <!-- Ensures cart functionality works -->
+</body>
+</html>
+
