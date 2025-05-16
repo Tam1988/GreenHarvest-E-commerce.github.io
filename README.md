@@ -1,4 +1,5 @@
 # GreenHarvest E-Commerce Platform
+ **Live Website:** [Click here to visit GreenHarvest](https://tam1988.github.io/GreenHarvest-E-commerce.github.io/))  
 
 ## Project Overview  
 GreenHarvest is an e-commerce platform designed to support farmers by providing **high-quality agricultural products**, including seeds, tools, fertilizers, and machinery. Our mission is to **empower farming communities** with accessible resources while promoting sustainable agriculture.
