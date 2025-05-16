@@ -97,10 +97,12 @@ footer {
     text-align: center;
     background: yellow;
     color: purple;
-    padding: 15px;
+    padding: 10px 0;
+    font-size: 14px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
 }
 
 
