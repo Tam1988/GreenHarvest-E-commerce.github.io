@@ -1,9 +1,51 @@
 /* Mobile Responsive Navigation */
 @media (max-width: 600px) {
     nav ul {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;  
+    }
+    .dropdown-container {
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;  
+        align-items: center; 
+        gap: 15px;  
+        text-align: center;
+        height: 100vh;
+    }
+    
+    .dropdown {
+        width: 100%;  
         text-align: center;
     }
+    .dropdown-content {
+        width: auto;  
+    }
+    .dropdown-btn {
+        width: 100%;  
+        text-align: center;
+    }
+    header {
+        position: relative;  
+        padding: 15px;  
+        font-size: 18px;  
+    }
+
+    footer {
+        position: relative;  
+        font-size: 14px;  
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;  
+        gap: 15px;  
+    }
+
 }
 
 header {
@@ -61,7 +103,7 @@ nav ul li a {
 main {
     margin-top: 120px;
     padding: 30px;
-    background: #f8f9fa;
+    background: powderblue;
 }
  
 /* Mission, Testimonials, & Facts Styling */
@@ -140,7 +182,7 @@ footer {
 }
 .dropdown img {
     width: 100%;
-    max-width: 150px; /* Smaller image for better fit */
+    max-width: 150px;  
     height: auto;
     border-radius: 10px;
     margin-bottom: 5px;
